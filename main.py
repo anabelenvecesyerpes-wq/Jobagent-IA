@@ -69,3 +69,6 @@ def init_db():
     c.close()
 
 init_db()
+@app.get("/")
+def inicio():
+    return {"mensaje": "🤖 Agente de empleo-IA funcionando correctamente"}
